@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="mycharts">
+<label class="text1">温度</label>
+  <ec-canvas id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class="mycharts">
+  <label class="text2">土壤湿度</label>
+  <ec-canvas id="mychart-dom-gauge2" canvas-id="mychart-gauge" ec="{{ ec2 }}"></ec-canvas>
+  <label class="text2">光照强度：{{lx}} LX</label>
+</view>
+

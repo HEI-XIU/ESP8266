@@ -1,0 +1,43 @@
+/* pages/receive/receive.wxss */
+
+.input-item{
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 10rpx;
+  font-weight: bold;
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid lightgray;
+}
+
+.input{
+  margin-left: 30rpx;
+  font-size: 30rpx;
+
+}
+.sub{
+  height: 500rpx;
+  width: 600rpx;
+  border: 1rpx black solid; 
+  overflow-y: scroll;
+  overflow-x:scroll ;
+  border-radius: 20rpx;
+  box-shadow: 12rpx 12rpx 8rpx rgba(0, 0, 0, 0.15);
+}
+.sub_cnt{
+  height: 200rpx;
+  width: 600rpx;
+  border: 1rpx black solid; 
+  overflow-y: scroll;
+  overflow-x:scroll ;
+  border-radius: 20rpx;
+  box-shadow: 12rpx 12rpx 8rpx rgba(0, 0, 0, 0.15);
+}
+.btn{
+  background-color: #B3F0DE;
+  margin:20rpx 10rpx 20rpx 10rpx ;
+}
+.bt{
+  display: flex;
+  
+  flex-direction: row;
+}

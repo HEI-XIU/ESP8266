@@ -1,0 +1,27 @@
+<!--pages/receive/receive.wxml-->
+<view class="container">
+ 
+ <view class="input-item"> 
+ <view>topic:  </view>
+<input class="input"  placeholder="请输入主题" 
+ bindinput="TopicInput" value="{{topic}}"/>
+
+</view>
+
+<view class="sub_cnt">
+  <view wx:for="{{topics}}" wx:key="*this">
+  <button style="width:80vw" id='{{index}}' catchtap="TopicButton" data-topic='{{item.tpc}}'data-state='{{item.state}}'>{{item.tpc}}</button>
+   </view>
+</view>
+<view class="bt">
+  <button class="btn" style="width: 300rpx" catchtap="mqttsub_on" >订阅</button>
+  <button class="btn" style="width: 300rpx;"catchtap="mqttsub_off">取消订阅</button>
+</view>
+<view class="page-content">
+      
+        <view class="sub">
+            <rich-text nodes="{{msg}}" style="height:300rpx;"></rich-text>
+        </view>
+      </view>
+
+</view>
